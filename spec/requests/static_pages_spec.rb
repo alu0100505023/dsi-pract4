@@ -9,4 +9,12 @@ describe "Static pages" do
       expect(page).to have_content('prct4-rails')
     end
   end
+
+	describe "Help page" do
+
+    it "should have the content 'Help'" do
+      visit '/static_pages/help'
+      expect(page).to have_content('Ayuda')
+    end
+  end	
 end
